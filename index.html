@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Second app</title>
+    <link rel="stylesheet" href="styles/mobile.css" />
+    <link rel="stylesheet" href="styles/tablet.css" />
+    <link rel="stylesheet" href="styles/desktop.css" />
+  </head>
+  <body>
+    <div class="whole-app">
+      <button id="add-new-btn">Add new</button>
+      <button id="sort-desc-btn">Sort desc</button>
+      <button id="sort-asc-btn">Sort asc</button>
+      <div class="search">
+        <form id="search-form">
+        <input id="search-text" type="text">
+        <input id="search-btn" type="submit" value="Search">
+      </form></div>
+      <div class="all-movies">
+        <ul id="movie-list">
+          <li class="movie"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal">
+      <div class="modal-content">
+        <form id="add-new-form">
+            <label for="formMovieTitle">Title: </label>
+            <input type="text" id="form-movie-title" name="formMovieTitle" />
+            <label for="formMovieCategory">Category: </label>
+            <input
+              type="text"
+              id="form-movie-category"
+              name="formMovieCategory"
+            /><br />
+          <label for="formPicture1">Picture_name.format: </label>
+          <input
+            type="text"
+            id="form-picture-1"
+            name="formPicture1"
+          /><br />
+          <label for="formPicture2">Picture_name.format: </label>
+          <input
+            type="text"
+            id="form-picture-2"
+            name="formPicture2"
+          /><br />
+          <label for="formPicture3">Picture_name.format: </label>
+          <input
+            type="text"
+            id="form-picture-3"
+            name="formPicture3"
+          /><br />
+          <br>
+          <div>
+            <input
+              type="submit"
+              id="submit-form-btn"
+              name="submitFormBtn"
+              disabled="true"
+            />        
+            <button type="cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="update-modal">
+      <div class="modal-content">
+        <form id="update-form">
+          <input type="text" id="update-index" style="display: none;">
+          
+            <label for="formMovieTitle">Title: </label>
+            <input type="text" id="update-form-movie-title" name="formMovieTitle" />
+          
+            <label for="formMovieCategory">Category: </label>
+            <input
+              type="text"
+              id="update-form-movie-category"
+              name="formMovieCategory"
+            /><br />
+          
+          <label for="formPicture1">Picture_name.format: </label>
+          <input
+            type="text"
+            id="update-form-picture-1"
+            name="formPicture1"
+          /><br />
+          <label for="formPicture2">Picture_name.format: </label>
+          <input
+            type="text"
+            id="update-form-picture-2"
+            name="formPicture2"
+          /><br />
+          <label for="formPicture3">Picture_name.format: </label>
+          <input
+            type="text"
+            id="update-form-picture-3"
+            name="formPicture3"
+          /><br />
+          <br>
+          <div>
+            <input
+              type="submit"
+              id="update-form-btn"
+              name="submitFormBtn"
+            />
+          
+            <button type="cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="carousel-panel">
+          <div id="carousel-item-1">
+            <img id="picture-1" src="" alt="First slide"/>
+          </div>
+          <div id="carousel-item-2">
+            <img id="picture-2" src="" alt="Second slide" />
+          </div>
+          <div id="carousel-item-3">
+            <img id="picture-3" src="" alt="Third slide" />
+          </div>
+          <div class="carousel-buttons">
+            <button id="carousel-button-1" disabled="true">1</button>
+            <button id="carousel-button-2">2</button>
+            <button id="carousel-button-3">3</button>
+            <button id="carousel-button-exit">X</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascripts/movie.js"></script>
+    <script src="javascripts/logic.js"></script>
+    <script src="javascripts/view.js"></script>
+    <script src="javascripts/init.js"></script>
+<body>
+</html>

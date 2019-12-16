@@ -1,0 +1,200 @@
+@media screen and (max-width: 767px) {
+  
+    #movie-list {
+      margin: 0;
+    }
+  
+    .whole-app {
+      display: grid;
+      grid-template-rows: repeat(10, 1fx);
+      grid-template-columns: 1fx 1fx 1fx;
+      text-align: center;
+    }
+  
+    .movie {
+      list-style-type: none;
+      display: grid;
+      grid-template-rows: repeat(4, 1fx);
+      grid-template-columns: repeat(6, 1fx);
+      margin: 0;
+      border: 2px;
+      padding: 1% 1%;
+      text-align: center;
+    }
+  
+    #add-new-btn {
+      grid-row: 1;
+      grid-column: 1;
+      background-color: rgb(65, 65, 65);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      color: white;
+      text-align: center;
+    }
+  
+    #sort-desc-btn {
+      grid-row: 1;
+      grid-column: 2;
+      background-color: rgb(65, 65, 65);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      color: white;
+      text-align: center;
+    }
+  
+    #sort-asc-btn {
+      grid-row: 1;
+      grid-column: 3;
+      background-color: rgb(65, 65, 65);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      color: white;
+      text-align: center;
+    }
+  
+    .search {
+      grid-row: 2;
+      grid-column: 1/4;
+    }
+  
+    .all-movies {
+      grid-row: 3/11;
+      grid-column: 1/4;
+      overflow: auto;
+    }
+  
+    .movie-title {
+      grid-row: 1;
+      grid-column: 1/7;
+    }
+  
+    .movie-category {
+      grid-row: 2;
+      grid-column: 1/7;
+    }
+  
+    #modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  
+    .modal-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10% auto;
+    }
+  
+    #add-new-form {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: grey;
+      padding: 7% 7%;
+      margin: 10% auto;
+    }
+  
+    #update-modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  
+    #update-form {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: grey;
+      padding: 7% 7%;
+      margin: 10% auto;
+    }
+  
+    #carousel-panel {
+      display: none;
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  
+    #carousel-item-1 {
+      display: flex;
+      width: 70%;
+      height: 70%;
+    }
+  
+    #carousel-item-2 {
+      display: none;
+      width: 70%;
+      height: 70%;
+    }
+  
+    #carousel-item-3 {
+      display: none;
+      width: 70%;
+      height: 70%;
+    }
+  
+    .open-btn {
+      background-color: rgb(58, 58, 153);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      grid-row: 3/5;
+      grid-column: 1/3;
+      color: white;
+    }
+  
+    .update-btn {
+      background-color: rgb(45, 141, 45);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      grid-row: 3/5;
+      grid-column: 3/5;
+      color: white;
+    }
+  
+    .remove-btn {
+      background-color: rgb(189, 59, 59);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      grid-row: 3/5;
+      grid-column: 5/7;
+      color: white;
+    }
+  }
+  

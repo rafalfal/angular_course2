@@ -1,0 +1,202 @@
+@media screen and (min-width: 991px) {
+  
+    #movie-list {
+      margin: 0;
+    }
+  
+    .whole-app {
+      display: grid;
+      grid-template-rows: repeat(7, 1fx);
+      grid-template-columns: repeat(8, 1fx);
+      text-align: center;
+      padding: 1% 1%;
+    }
+  
+    .movie {
+      list-style-type: none;
+      display: grid;
+      grid-template-rows: 1fx;
+      grid-template-columns: 35% 35% 10% 10% 10%;
+      margin: 0;
+      border: 2px;
+      padding: 1% 1%;
+      text-align: left;
+      
+    }
+  
+    #add-new-btn {
+      grid-row: 7;
+      grid-column: 8;
+      background-color: rgb(65, 65, 65);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      color: white;
+      text-align: center;
+    }
+  
+    #sort-desc-btn {
+      grid-row: 1;
+      grid-column: 8;
+      background-color: rgb(65, 65, 65);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      color: white;
+      text-align: center;
+    }
+  
+    #sort-asc-btn {
+      grid-row: 1;
+      grid-column: 7;
+      background-color: rgb(65, 65, 65);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      color: white;
+      text-align: center;
+    }
+  
+    .search {
+      grid-row: 1;
+      grid-column: 3/5;
+    }
+  
+    .all-movies {
+      grid-row: 2/7;
+      grid-column: 1/9;
+      overflow: auto;
+    }
+  
+    .movie-title {
+      grid-row: 1;
+      grid-column: 1;
+    }
+  
+    .movie-category {
+      grid-row: 1;
+      grid-column: 2;
+    }
+  
+    #modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  
+    .modal-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10% auto;
+    }
+  
+    #add-new-form {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: grey;
+      padding: 7% 7%;
+      margin: 10% auto;
+    }
+  
+    #update-modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  
+    #update-form {
+      width: 100%;
+      height: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: grey;
+      padding: 7% 7%;
+      margin: 10% auto;
+    }
+  
+    #carousel-panel {
+      display: none;
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  
+    #carousel-item-1 {
+      display: flex;
+      width: 70%;
+      height: 70%;
+    }
+  
+    #carousel-item-2 {
+      display: none;
+      width: 70%;
+      height: 70%;
+    }
+  
+    #carousel-item-3 {
+      display: none;
+      width: 70%;
+      height: 70%;
+    }
+  
+    .open-btn {
+      background-color: rgb(58, 58, 153);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      grid-row: 1;
+      grid-column: 3;
+      color: white;
+    }
+  
+    .update-btn {
+      background-color: rgb(45, 141, 45);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      grid-row: 1;
+      grid-column: 4;
+      color: white;
+    }
+  
+    .remove-btn {
+      background-color: rgb(189, 59, 59);
+      border-radius: 4px;
+      border: none;
+      width: 90%;
+      grid-row: 1;
+      grid-column: 5;
+      color: white;
+    }
+  }
+  
